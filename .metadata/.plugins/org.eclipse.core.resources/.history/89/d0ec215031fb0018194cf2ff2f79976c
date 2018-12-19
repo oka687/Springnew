@@ -1,0 +1,14 @@
+package org.zerock.me.domain;
+
+import java.sql.Date;
+
+public class Member {
+
+	private int no;
+	private String name;
+	private String email;
+	private String password;
+	private String tel;
+	private Date registerDate;
+	
+}

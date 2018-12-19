@@ -1,0 +1,9 @@
+package org.zerock.me.web;
+
+
+@Controller
+public class AuthContorller {
+	
+	
+
+}

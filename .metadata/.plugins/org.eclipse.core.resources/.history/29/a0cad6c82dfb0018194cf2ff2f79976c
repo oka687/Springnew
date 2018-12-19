@@ -1,0 +1,9 @@
+package org.zerock.me.domain;
+
+public class Lesson {
+	
+	private int no;
+	private String title;
+	
+
+}

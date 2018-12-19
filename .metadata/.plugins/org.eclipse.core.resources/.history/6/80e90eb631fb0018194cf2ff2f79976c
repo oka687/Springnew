@@ -1,0 +1,7 @@
+package org.zerock.me.dao;
+
+public interface BoardDao {
+	
+	List<Board> finaAll trows Exception;
+
+}

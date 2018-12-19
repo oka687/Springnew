@@ -1,0 +1,11 @@
+package org.zerock.me.dao;
+
+import java.util.List;
+
+import org.zerock.me.domain.Board;
+
+public interface BoardDao {
+	
+	List<Board> finaAll trows Exception;
+
+}

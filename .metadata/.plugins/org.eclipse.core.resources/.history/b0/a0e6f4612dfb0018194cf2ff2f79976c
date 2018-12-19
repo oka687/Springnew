@@ -1,0 +1,10 @@
+package org.zerock.me.domain;
+
+public class Board {
+
+	private int no;
+	private String contents;
+	private Date createdDate;
+	
+	
+}
