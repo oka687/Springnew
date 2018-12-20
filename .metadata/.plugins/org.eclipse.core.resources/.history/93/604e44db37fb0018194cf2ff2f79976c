@@ -1,7 +1,0 @@
-package org.zerock.me.dao;
-
-public interface MemberDao {
-	
-	Member findByEmailPassword(Map<String, Object>params)
-
-}

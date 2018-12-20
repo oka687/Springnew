@@ -1,7 +1,0 @@
-package org.zerock.me.dao;
-
-public interface LessonDao {
-
-	List<Map<String, Object>> findByParticipantNo(int memberNo);
-	
-}

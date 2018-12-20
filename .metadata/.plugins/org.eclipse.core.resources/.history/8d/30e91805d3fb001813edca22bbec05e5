@@ -1,9 +1,0 @@
-package org.zeorck.me.lmp;
-
-import org.springframework.context.annotation.ComponentScan;
-
-@ComponentScan("org.zerock.me")
-@PropertySource("classPath: ")
-public class AppConfig {
-
-}
