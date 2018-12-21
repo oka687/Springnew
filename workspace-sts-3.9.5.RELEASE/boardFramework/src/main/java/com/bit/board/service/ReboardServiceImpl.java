@@ -3,13 +3,31 @@ package com.bit.board.service;
 import java.util.List;
 import java.util.Map;
 
-import com.bit.board.admin.model.ReboardDto;
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+import com.bit.board.ReboardDao;
+import com.bit.board.common.dao.CommonDao;
+import com.bit.board.model.ReboardDto;
+
+@Service
 public class ReboardServiceImpl implements ReboardService {
+	
+	@Autowired
+	private SqlSession sqlSession;
+	
+	
 
 	@Override
 	public int writeArticle(ReboardDto reboardDto) {
-		// TODO Auto-generated method stub
+		
+		int seq = sqlSession.getMapper(CommonDao.class).getNextSeq();
+		reboardDto.setSeq(seq);
+		reboardDto.setRef(seq);
+		
+		int cnt = sqlSession.getMapper(ReboardDao.class).writeArticle(reboardDto);
+		
 		return 0;
 	}
 
@@ -21,14 +39,13 @@ public class ReboardServiceImpl implements ReboardService {
 
 	@Override
 	public ReboardDto viewArticle(int seq) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return sqlSession.getMapper(ReboardDao.class).
 	}
 
 	@Override
 	public int replyArticle(ReboardDto reboardDto) {
-		// TODO Auto-generated method stub
-		return 0;
+		return null;
 	}
 
 	@Override
@@ -42,5 +59,7 @@ public class ReboardServiceImpl implements ReboardService {
 		// TODO Auto-generated method stub
 		
 	}
+
+	
 
 }

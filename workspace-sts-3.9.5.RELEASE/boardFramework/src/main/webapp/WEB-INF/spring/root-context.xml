@@ -10,7 +10,7 @@
 	<!-- Root Context: defines shared resources visible to all other web components -->
 
 	<context:component-scan
-		base-package="com-bit.**.servcie"></context:component-scan>
+		base-package="com.bit.**.service"></context:component-scan>
 
 	<bean id="ds"
 		class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
@@ -27,7 +27,13 @@
 			value="classpath:com/bit/config/mybatis/configuration.xml"/>
 			<property name="mapperLocations">
 				<list>
+					<value>classpath:com/bit/config/mybatis/album.xml</value>
+					<value>classpath:com/bit/config/mybatis/bbs.xml</value>
 					<value>classpath:com/bit/config/mybatis/board_admin.xml</value>
+					<value>classpath:com/bit/config/mybatis/common.xml</value>
+					<value>classpath:com/bit/config/mybatis/reboard.xml</value>
+					<value>classpath:com/bit/config/mybatis/memo.xml</value>
+					<value>classpath:com/bit/config/mybatis/board.xml</value>		
 				</list>
 			</property>
 	

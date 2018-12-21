@@ -2,14 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ tablib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var = "root" value="${pageContext.request.contextPath}"/>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html lang="ko">
-<head>
-<title>글입력 성공</title>
 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" href=${root }/css/skin_purple.css" type="text/css">
-</head>
 
 <body>
 

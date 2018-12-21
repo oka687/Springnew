@@ -11,7 +11,7 @@
 		<typeAlias alias="albumDto" type="com.bit.board.model.AlbumDto"/>
 		<typeAlias alias="bbsDto" type="com.bit.board.model.BbsDto"/>
 		<typeAlias alias="boardDto" type="com.bit.board.model.BoardDto"/>
-		<typeAlias alias="reboradDto" type="com.bit.board.model.ReboradDto"/>
+		<typeAlias alias="reboardDto" type="com.bit.board.model.ReboardDto"/>
 		<typeAlias alias="memoDto" type="com.bit.board.model.MemoDto"/>
 		
 	</typeAliases>

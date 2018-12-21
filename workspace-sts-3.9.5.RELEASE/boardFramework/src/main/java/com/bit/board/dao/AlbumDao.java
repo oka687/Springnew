@@ -1,5 +1,11 @@
 package com.bit.board.dao;
 
-public class AlbumDao {
+import java.util.List;
+import java.util.Map;
+
+
+import com.bit.board.model.ReboardDto;
+public interface AlbumDao {
+	
 
 }
